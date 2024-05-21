@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.container-fluid {
+  padding-left: 100px;
+}
+.head {
+  /* height: 1; */
+  width: 100vw;
+  height: 60vh;;
+  padding-left: 200px;
+  padding-top: 50px;
+  background-image: url("./images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-size: 2200px;
+  border-bottom-left-radius: 100px;
+  background-position: center;
+  margin-bottom: 100px;
+  color: hsl(0, 0%, 100%);
+}
+.but {
+  padding-right: 200px;
+}
+.btn {
+  border: none;
+}
+.btn1 {
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  color: rgb(255, 34, 0);
+}
+.free {
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  color: rgb(237, 4, 4);
+}
+.more {
+  height: 40px;
+  width: 120px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+.main-head {
+  /* height: 100vh; */
+  width: 100vw;
+}
+.plat {
+  color: hsl(0, 0%, 100%);
+}
+.start {
+  margin-top: 70px;
+  margin-right: 150px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: hsl(207, 13%, 34%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content {
+  margin-top: 240px;
+  line-height: 25px;
+  font-weight: 400;
+  color: hsl(207, 13%, 34%);
+}
+.image {
+  height: 100px;
+  width: 640px;
+  margin-bottom: 200px;
+  padding-left: 100px;
+}
+.item {
+  height: 300px;
+  width: 100vw;
+  margin-top: 250px;
+  background-color: darkcyan;
+  border-top-right-radius: 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  background-image: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.phones {
+  margin-bottom: 500px;
+}
+.item1 {
+  color: hsl(0, 0%, 100%);
+  padding-top: 80px;
+  
+}
+.overlap-background {
+  position: relative;
+  bottom: 170px;
+}
+.container1 {
+  height: 110vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  font-family: "overpass", "Ubuntus";
+  /* font-weight: 300; */
+}
+.image1 {
+  position: relative;
+  left: -300px;
+}
+.content1 {
+  margin-top: 50px;
+  /* margin-right: 100px; */
+  line-height: 25px;
+  /* font-weight: 300; */
+  font-size: 15px;
+}
+.foot {
+  height: 400px;
+  width: 100vw;
+  background-color: hsl(240, 10%, 16%);
+  color: aliceblue;
+  border: none;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  margin-bottom: 160px;
+  margin-top: 200px;
+}
+h6 {
+  margin-left: 50px;
+}
+.links {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  line-height: 30px;
+}
+/*active states */
+.but:active {
+  color: aqua;
+}
+.btn1:hover {
+  background-color: rgb(218, 201, 201);
+  color: hsl(0, 0%, 100%);
+}
+.free:hover {
+  background-color: rgb(218, 201, 201);
+  color: hsl(0, 0%, 100%);
+}
+.more:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(255, 34, 0);
+}
+#navbarNav a:hover {
+  /* border-bottom: 1px solid white; */
+  text-decoration: underline;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: hsl(0, 0%, 100%);
+}
+.myname {
+  color: hsl(13, 100%, 72%);
+  text-align: start;
+  padding-top: 100px;
+}
+@media screen and (max-width: 710px){
+   .but{
+    display: none;
+   }
+   #responsive-brand{
+    position: relative;
+    right: 200px;
+   }
+   .start {
+    margin-top: 70px;
+    margin-right: 100px;
+    text-align: center;
+  }
+  .container{
+    flex-direction: column-reverse;
+    column-gap: -100px;
+
+  }
+  .img1{
+    height: 500px;
+    width: 500px;
+    margin-right: 600px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .content{
+    margin-bottom: 200px;
+  }
+  .image{
+    position: relative;
+    right:220px;
+    height: 50%;
+    width: 50%;
+  }
+  .item {
+    height: 1000px;
+    width: 100vw;
+    margin-top: 250px;
+    background-color: darkcyan;
+    border-top-right-radius: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    background-image: url("./images/bg-pattern-circles.svg"),
+      linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .item1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    position: relative;
+    top: 800px;
+  }
+  .container1{
+    height: 1200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 16px;
+    color: hsl(207, 13%, 34%);
+    font-family: "overpass", "Ubuntus";
+  }
+  .img2{
+    height: 500px;
+    width: 700px;
+    margin-bottom: 800px;
+    margin-left: 160px;
+  }
+  .content1{
+    margin-top: 200px;
+  }
+  .image1{
+    height: 100px;
+    width: 50%;
+  } 
+  .foot{
+    height: 1300px;
+    width: 100vw;
+    background-color: hsl(240, 10%, 16%);
+    color: aliceblue;
+    border: none;
+    border-top-right-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .connect{
+    margin-left: 130px;
+  }
+  .myname{
+    display: none;
+  }
+  .myname1{
+    text-align: center;
+    margin-top: 30px;
+    color: crimson;
+  }
+}
+/* here  i am writing  responsive design code for mobile device it just for my understanding purpose */
+/* @media screen and (min-width:375px) {
+  .head{
+    height: 70vh;
+    width: 110vw;
+  }
+  .start{
+    height: 200px;
+    width:300px;
+    position: relative;
+    right: 100px;
+    text-align: center;
+  }
+  .plat{
+    text-align: center;
+    font-size:30px;
+  }
+  .img1{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+  }
+  .head3{
+    text-align: center;
+  }
+  .para2{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 11px;
+  } 
+  .content{
+    height: 10vh;
+    width: 110vw;
+    margin-bottom: 1000px;
+    position: relative;
+    bottom: 400px;
+  }
+  .item{
+    height: 600px;
+    position: relative;
+    bottom: 900px;
+  }
+  .phones{
+    height: 400px;
+    width: 380px;
+    position: relative;
+    top: 280px;
+  }
+  .pb-3{
+    font-size: 30px;
+  }
+  .para1{
+    font-size: 11px;
+  }
+  .container1{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    bottom: 1000px;
+  }
+  .img2{
+    height: 300px;
+    width: 360px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+  }
+  .content2{
+    height: 70vh;
+    width: 100vw;
+  }
+  h2{
+    text-align: center;
+  }
+  .paragragh{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 11px;
+  } 
+  .foot{
+    height: 200vh;
+    width: 110vw;
+    position: relative;
+    bottom: 700px;
+  }
+  .myname1{
+    position: relative;
+    right: 80px;
+  }
+} */
